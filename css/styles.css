@@ -38,11 +38,13 @@ button {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 426px;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 /* header */
 .header {
@@ -1023,19 +1025,15 @@ color: #8E8F99;
 
 
 
-
-/** media-tablet */
-@media screen and (min-width: 768px) { 
-.container {
-  min-width: 736px;
-}  
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
 }
 
-/* media-desctop */
-@media screen and (min-width: 1440px) { 
-.container {
-  min-width: 1128px;
-  background-color: #31d0aa;
-}  
-
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1158px;
+   
+  }
 }
