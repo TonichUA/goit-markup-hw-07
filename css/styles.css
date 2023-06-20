@@ -320,16 +320,23 @@ letter-spacing: 0.02em;
 
 /*  blok3-team  */
 
+
 .team {
   background: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.team > .container {
+  max-width: 264px;
+  padding: 0;
+}
+
 .team-list {
   display: flex;
   flex-direction: column;
+  row-gap: 72px;
   
-  gap: 24px;
   width: 264px;
 }
 .team-title-top {
@@ -380,6 +387,7 @@ letter-spacing: 0.02em;
 .icon-team-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 
@@ -468,15 +476,22 @@ letter-spacing: 0.02em;
   background: var(--title-color);
   padding-top: 100px;
   padding-bottom: 100px;
-  display: flex;
+ 
 }
+
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 72px;
+  max-width: 428px;
+  margin: 0 auto;
 }
 
 .footer-container-left {
-  margin-right: 120px;
+  text-align: center;
+ 
 }
 
 .logo-footer-container {
@@ -506,6 +521,7 @@ letter-spacing: 0.02em;
   letter-spacing: 0.02em;
 
   color: #f4f4fd;
+  text-align: start;
 }
 
 .social-media-text {
@@ -517,6 +533,7 @@ letter-spacing: 0.02em;
 
   color: var(--color-white);
   margin-bottom: 16px;
+  text-align: center;
 }
 .social-media-list {
   display: flex;
@@ -547,7 +564,7 @@ letter-spacing: 0.02em;
   fill: #f4f4fd;
 }
 .footer-container-subscribe {
-  margin-left: 80px;
+  width: 100%;
 }
 .social-media-title {
   font-weight: 500;
@@ -558,20 +575,17 @@ letter-spacing: 0.02em;
 
   color: var(--color-white);
   margin-bottom: 16px;
+  text-align: center;
 }
 .footer-input {
   height: 40px;
-  width: 264px;
+  width: 100%;
 
-  border: 1px solid #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  padding: 8px 16px;
-  color: #ffffff;
+opacity: 0.3;
+background-color: transparent;
+border: 1px solid #FFFFFF;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
 }
 .footer-input::placeholder {
   font-weight: 400;
@@ -583,10 +597,12 @@ letter-spacing: 0.02em;
   letter-spacing: 0.04em;
 
   color: #ffffff;
+  padding: 8px 0 ;
+  padding-left: 16px;
 }
 .footer-form-btn {
   height: 40px;
-  min-width: 165px;
+  max-width: 165px;
 
   border-radius: 4px;
   padding: 8px 24px 8px 24px;
@@ -609,15 +625,20 @@ letter-spacing: 0.02em;
 }
 .footer-form {
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 24px;
+  width: 100%;
 }
 .footer-form:first-child {
   gap: 0px;}
 
   .subscribe-send-icon {
     margin-left: 16px;
+  }
+  .subscribe-label {
+   width: 100%;
   }
 
 /* modal-window */
@@ -984,6 +1005,8 @@ color: #8E8F99;
   box-sizing: border-box;
 }
 
+
+
 /*////// Tablet ///////*/
 
 /* Quality */
@@ -1007,10 +1030,47 @@ flex-wrap: wrap;
 
 .quality-item {
   
-  width: calc((100% - 24px) / 2);
+  width: calc((100% - 48px) / 2);
 }
 .quality-title {
   text-align: start;
+}
+
+
+/* footer tablet */
+.footer > .container{
+  max-width: 552px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: 0 auto;
+  
+}
+
+.footer-container-left{
+  margin-right: 24px;
+  text-align: start;
+}
+.footer-form {
+  flex-direction: row;
+  justify-content: start;
+}
+
+
+.subscribe-label {
+  max-width: 264px;
+}
+
+.social-media-title {
+  text-align: start;
+}
+.social-media-text{
+  text-align: start;
+}
+
+.footer-container-subscribe{
+  
 }
 }
 
@@ -1022,16 +1082,20 @@ flex-wrap: wrap;
   .quality > .container {
     max-width: 1158px;
   }
+  .quality {
+    padding: 120px 0;
+  }
    .quality-list {
     flex-wrap: nowrap;
     gap: 24px;
 }
 .quality-item {
-  width: 264px;
+   width: calc((100% - 72px) / 4);
+   
 }
 .quality-text{
   font-weight: 400;
-  
+ 
   
 }
  .quality-title {
@@ -1065,7 +1129,9 @@ flex-wrap: wrap;
 }
 
 /* About */
-
+.about > .container{
+  max-width: 1158px;
+}
 .about {
   display: contents;
   padding-bottom: 120px;
@@ -1091,4 +1157,28 @@ flex-wrap: wrap;
   width: calc((100% - 48) / 3);
 }
 
+/* footer Desctop */
+.footer > .container {
+  max-width: 1158px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  
+}
+.footer-container-left{
+  margin-right: 120px;
+  
+}
+.footer-container-right {
+  margin-right: 80px;
+}
+.subscribe-label {
+  border: 1px solid #FFFFFF;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+.footer-input {
+opacity: unset;
+
+}
 }
