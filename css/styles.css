@@ -175,9 +175,13 @@ button {
 /* hero */
 .hero {
   background: var(--title-color);
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
+.hero > .container {
+  margin: 0 auto;
+}
+
 .hero-bg {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -185,14 +189,26 @@ button {
     ),
     url(..//images/bg-img/imgbg.jpg);
 
-  max-width: 1440px;
+  /* max-width: 1440px;
   height: 600px;
-  margin: 0 auto;
+  margin: 0 auto; */
   background-repeat: no-repeat;
   background-position: center;
 
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-bg {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktop/bg-img/Dark-tablet-bg@2x.jpg);
+  }
+}
+
 .hero-container {
   display: flex;
   margin: 0 auto;
@@ -200,16 +216,17 @@ button {
   align-items: center;
 }
 .hero-title {
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-transform: capitalize;
 
   text-align: center;
   letter-spacing: 0.02em;
 
   color: var(--color-white);
-  margin-bottom: 44px;
-  
-  max-width: 496px;
+  margin-bottom: 72px;
+  max-width: 320px;
 }
 
 .button {
@@ -220,7 +237,7 @@ button {
   line-height: 1.5;
 
   display: flex;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   letter-spacing: 0.04em;
 
   color: var(--color-white);
