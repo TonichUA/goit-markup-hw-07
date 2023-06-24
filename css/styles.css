@@ -1498,14 +1498,10 @@ opacity: unset;
 /* header */
 
 /* hero */
-.portfolio-hero > .container {
-  max-width: 1158px;
-}
 
-.portfolio-hero {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
+
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1519,6 +1515,13 @@ opacity: unset;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.portfolio-hero {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+  .portfolio-hero > .container {
+  max-width: 1158px;
+} 
 .hero-btn-container {
   display: flex;
   margin: 0 auto;
