@@ -200,11 +200,16 @@ button {
 
 .mobile-menu-address-list {
   margin-bottom: 8px;
+  
 }
 .mobile-menu-address-item {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; */
   margin-bottom: 40px;
 }
 .mobile-menu-address-phone {
+  
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -244,7 +249,7 @@ button {
 
   border-radius: 50%;
   background-color: var(--first-btn-and-link-color);
-  padding: 12px;
+  padding: 8px;
   transition: background-color var(--transition-dur-and-func);
 }
 .mobile-menu-icon-link:hover,
@@ -363,6 +368,9 @@ button {
 .quality {
   padding: 96px 16px 96px 16px;
 }
+.quality > .container {
+  max-width: 428px;
+}
 .icon-quality-list {
   display: none;
 }
@@ -402,7 +410,7 @@ text-transform: capitalize;
   margin-bottom: 8px;
 }
 .quality-text {
- font-weight: 500;
+ 
 font-size: 16px;
 line-height: 1.5;
 
@@ -1016,6 +1024,13 @@ color: #8E8F99;
     width: 100%;
   }
 }
+@media screen and (max-width: 428px) {
+ .mobile-menu-address-phone {
+font-size: 24px;
+ } 
+} 
+  
+
 
 
 
@@ -1203,7 +1218,7 @@ color: #8E8F99;
   
  .quality-item {
   
-    min-width: 356px;
+   
     width: calc((100% - 24px) / 2);
   
 }
